@@ -1,0 +1,16 @@
+Day 1
+1. import day22.1 in your core java workspace.
+1.1 refer to package "itc_with_sleep" : to observe deadlock (with sleep method)
+1.2 refer to package "itc_with_wait" : to observe deadlock (with wait method)
+1.3 refer to package "itc_with_wait_notify" : to observe correctly working ITC
+(Refer to Utils2.java mainly)
+
+2.Import day1.1 in your advanced java workspace.
+(Fix build path)
+2.1 Revise DB connectivity
+2.2 Revise JDBC steps , Statement n ResultSet
+
+3.Reading H.W
+HTTP Basics
+Web Server basics
+Refer to any online TCP/IP primer tutorial

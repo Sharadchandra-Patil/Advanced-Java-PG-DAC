@@ -1,0 +1,62 @@
+Today's Topics
+ITC
+User Threads vs Daemon Threads
+Enter JDBC (1st topic of Advanced Java)
+
+
+Revise
+What is synchronization ?
+When it's required ?
+Which techniques ?
+
+Answer this
+1. Lock/monitor is assciated with : java object / method / block / class
+2. When does thrd need to acquire the lock 
+3. Can single thrd acquire multiple locks ?
+4. Can 1 lock be shared across multiple threads  ?
+5. Blocking trigger : 
+Un blocked trigger :
+6. Name the conditions under which lock is not released ?
+7. Can a class contain synchronized as well as non synchronized methods?
+8. Can you run thread un safe APIs , in thread safe manner ?
+How ?
+
+ITC
+Refer to eclipse project day21.4
+Does Utils class contain Thread safe APIs (read n write methods)
+Is atomicity(mutually exclusive behavior) seen ? 
+(i.e while producer is producing data , can consumer read it n vice versa ????)
+Are there any problems observed even after applying synchronization ???
+
+What's the cause of it ?
+
+Problem n it's solution
+1. ITC with sleep
+Observation : deadlock
+Why : circular dependency
+In case consumer is running faster --
+what will happen if it get's 2 consecutive chances : dataReady : false , 
+main : Blocked on i/p
+consumer : blocked on sleep : inside the monitor
+producer : synched method : writeData -- blocked on monitor : outside
+After user presses Enter : main : blocked on join
+consumer : blocked on sleep : inside the monitor
+producer : synched method : writeData -- blocked on monitor : outside
+
+User vs Daemon Threads
+----------------------------------------
+JDBC : Java DB connectivity
+What is it ? : API --java.sql --to allow prog --to connect to DB , CRUD , close connection
+Why : Allows prog : platform inde. DB apps + DB vendor inde.
+JDBC allows only partial DB independence. 
+
+JDBC Driver
+
+Steps in DB connectivity
+0. Establish connection with DB
+
+
+Objectives 
+1. Display all emp details (Statement API)
+2. Display emp details from a specific department , joined after specific date , sorted details as per salary
+3. Layers in DB connectivity
