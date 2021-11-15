@@ -10,7 +10,7 @@ public class DBUtils {
 	public static Connection fetchConnection() throws SQLException{
 		if (cn == null) {
 			String url = "jdbc:mysql://localhost:3306/sunbeam21?useSSL=false&allowPublicKeyRetrieval=true";
-			cn = DriverManager.getConnection(url, "root", "root");
+			cn = DriverManager.getConnection(url, "root", "0214");
 		}
 		return cn;
 	}
